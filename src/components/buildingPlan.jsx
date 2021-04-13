@@ -1,6 +1,6 @@
 import React from 'react';
 import { Map, GoogleApiWrapper, Polygon, Polyline } from 'google-maps-react';
-import coordinates from '../floor';
+import coordinates from '../staticData/floor';
 import config from '../config/config';
 import { v4 as uuidv4 } from 'uuid';
 import {mapStyles, containerStyles, colors} from './stylesAttributes/buildingPlanStylesAttributes';
