@@ -9,7 +9,9 @@ const config = {
         },
         requestConfig : {
             method : 'GET',
-            url : 'https://213.184.245.66:5010/api/get_all_people'
+            host : 'https://213.184.245.66',
+            port : '5010',
+            endpoint : '/api/get_all_people'
         }    
     }
 }

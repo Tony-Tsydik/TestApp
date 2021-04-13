@@ -3,25 +3,9 @@ import { Map, GoogleApiWrapper, Polygon, Polyline } from 'google-maps-react';
 import coordinates from '../floor';
 import config from '../config/config';
 import { v4 as uuidv4 } from 'uuid';
+import {mapStyles, containerStyles, colors} from './stylesAttributes/buildingPlanStylesAttributes';
 
 const MapContainer = (props) => {
-    const mapStyles = {
-        width: '100%',
-        height: '100%',
-    };
-
-    const containerStyles = {
-        width: '50%',
-        height: '100%',
-        marginLeft: '50%',
-        marginTop: 0
-    };
-
-    const colors = {
-        polygonStrokeColor : 'white',
-        polygonFillColor : 'blue',
-        polylineStrokeColor : 'white'
-    }
 
     const initialCoordinates = {
         polygonCoordinates: [],

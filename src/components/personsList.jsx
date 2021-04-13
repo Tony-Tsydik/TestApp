@@ -23,7 +23,7 @@ const PersonList = () => {
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
     const requestData = {
         method: config.personsListConfig.requestConfig.method,
-        url: `${config.personsListConfig.requestConfig.url}?page_len=${pageSize}&page=${count}`,
+        url: `${config.personsListConfig.requestConfig.host}:${config.personsListConfig.requestConfig.port}${config.personsListConfig.requestConfig.endpoint}?page_len=${pageSize}&page=${count}`,
         headers: {
             Authorization: `Basic ${encodedPassword}`
         },
